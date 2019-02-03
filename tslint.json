@@ -6,5 +6,45 @@
       "node_modules/**/*.ts",
       "coverage/lcov-report/*.js"
     ]
+  },
+  "rules": {
+    "no-duplicate-variable": true,
+    "max-line-length": {
+      "options": [1800]
+    },
+    "member-ordering": [
+      false,
+      "public-before-private",
+      "static-before-instance",
+      "variables-before-functions"
+    ],
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "new-parens": true,
+    "interface-name": [false, "never-prefix"],
+    "no-arg": true,
+    "no-bitwise": true,
+    "no-conditional-assignment": true,
+    "no-consecutive-blank-lines": false,
+    "member-access": false,
+    "no-console": [
+      false,
+      "debug",
+      "info",
+      "time",
+      "timeEnd",
+      "trace"
+    ],
+    "no-empty": false,
+    "no-empty-interface": false,
+    "no-eval": true,
+    "max-classes-per-file": [true, 5, "exclude-class-expressions"],
+    "jsx-no-lambda": false,
+    "no-namespace": false
+  },
+  "jsRules": {
+    "max-line-length": {
+      "options": [180]
+    }
   }
 }
